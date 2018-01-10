@@ -9,8 +9,10 @@ body {
 main {
   display: block;
 }
+
 div {
     display: block;
+    color:  #3d5030;
 }
 
 img {
@@ -19,24 +21,43 @@ img {
 }
 
 a {
-
+  font-size: 1.5rem;
+font-weight: bold;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 32px;
-}
-h4 {
-  margin-bottom: 24px;
+  margin-bottom: 2rem;
+
 }
 
+h4 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+button {
+display: block;
+ padding: 0.5rem 0;
+ color: #ffffff;
+ background-color: #3e5231;
+   width: 100%;
+   text-align: center;
+}
+button:hover {
+    color: #5abf17;
+    transition: color 200ms;
+}
 /* Header Container */
 
 header nav {
     display: flex;
     height: 4rem;
-
 }
 
 .desktop {
@@ -45,79 +66,143 @@ header nav {
 
 .mobile {
   display: flex;
+  justify-content: space-around;
   width: 100%;
   padding: 0;
 }
 
 .navigation {
   align-items: center;
-  background-color: #ffffff;
-
 }
 
 .navigation li {
   display: flex;
   list-style: none;
-
 }
+.navigation img {
+  padding: 0.4rem;
+}
+
+nav a {
+    text-decoration: none;
+    display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: #3d5030;
+}
+
+nav a:hover {
+    color: #5abf17;
+    transition: color 200ms;
+}
+
+#colmar {
+    font-weight: 700;
+    color: #3d5030;
+}
+
+
+
+#academy {
+    color: #7d966c;
+    font-weight:600;
+}
+
+.logo img {
+    height: 3rem;
+    width: auto;
+}
+
 
 @media only screen and (min-width: 580px){
   .mobile {
     display: none;
  }
+
 .desktop {
-     display: flex;
-     margin-left: 0;
-     padding: 0 1.5rem;
-     width: 100%;
-     justify-content: space-between;
-     align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: ##f4f4f4;
+  height: 4rem;
+  width: 100%;
+  top: 0;
+  position: fixed;
+
+
+    margin-right: 1.5rem;
+
  }
+
  .logo {
    display: flex;
      align-items: center;
     flex: 1;
     width: auto;
  }
+
 .logo a {
-     display: flex;
-     justify-content: flex-end;
-     align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+    margin-left: 1.5rem;
 
    }
+
 .logo span {
-     font-weight: bold;
       text-transform: uppercase;
+      opacity: 0.66;
    }
+
 #colmar {
     font-weight: 700;
+    font-size: 1.7rem;
+}
+#colmar:hover {
+    color: #5abf17;
+    transition: color 200ms;
 }
 #academy {
     color: #808080;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
+
 nav li {
     list-style: none;
-    padding-left: 3.5rem;
+    margin-right: 1.5rem;
 }
-header nav ul {
+
+nav ul {
   display: flex;
+
+    padding-left: 0;
+    width: 100%;
 }
+
+
 
 /* Learn Section */
 
+.banner {
+  width: 100%;
+    height: 180px;
+    background-size: cover;
+    background: url(../img/images/banner.jpg);
+}
+.banner img {
+    display: none;
+}
 
 .start-here {
-    padding: 2rem 1rem;
+    padding: 32px 16px;
 }
 
-.start-here .button {
-display: block;
- padding: 0.5rem 0;
- color: #ffffff;
- background-color: #a9a9a9;
-   width: 100%;
-   text-align: center;
-}
+
+
+
+
+
 
  @media only screen and (min-width: 580px) {
   .learn {
@@ -130,14 +215,23 @@ display: block;
     background-color: #c0c0c0;
 
   }
- .banner {
-   display: block;
-  position: relative;
-    width: 60%;
+.learn .banner {
+    background: none;
+
+       height: auto;
+       width: 60%;
+
       padding: 2rem 1.5rem;
   }
+  .banner img {
+      display: flex;
+    }
 
 .start-here {
     width: 40%;
 
   }
+
+  .start-here h1 {
+    font-size: 4vw;
+}

@@ -6,13 +6,22 @@ body {
   margin: 0px;
 }
 
+header {
+  display: block;
+  background-color: #ffffff;
+}
+
+nav {
+    display: flex;
+    height: 64px;
+}
+
 main {
   display: block;
 }
 
 div {
     display: block;
-    color:  #3d5030;
 }
 
 img {
@@ -21,45 +30,54 @@ img {
 }
 
 a {
-  font-size: 1.5rem;
-font-weight: bold;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 2rem;
+}
 
+h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+h3 {
+font-size: 1.5rem;
+font-weight: bold;
+margin-bottom: 2rem;
 }
 
 h4 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 ul {
     list-style: none;
 }
+
 button {
-display: block;
- padding: 0.5rem 0;
- color: #ffffff;
- background-color: #3e5231;
+  display: block;
+  padding: 0.5rem 0;
+  color: #ffffff;
+   background-color: #3e5231;
    width: 100%;
    text-align: center;
-   margin-top: 3rem;
+   margin-top: auto;
 }
+
 button:hover {
     color: #5abf17;
     transition: color 200ms;
 }
-/* Header Container */
 
-header nav {
-    display: flex;
-    height: 4rem;
-}
+/* Header Container */
 
 .desktop {
   display: none;
@@ -87,9 +105,9 @@ header nav {
 nav a {
     text-decoration: none;
     display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        color: #3d5030;
+    justify-content: flex-end;
+    align-items: center;
+    color: #3d5030;
 }
 
 nav a:hover {
@@ -102,8 +120,6 @@ nav a:hover {
     color: #3d5030;
 }
 
-
-
 #academy {
     color: #7d966c;
     font-weight:600;
@@ -114,12 +130,10 @@ nav a:hover {
     width: auto;
 }
 
-
 @media only screen and (min-width: 580px){
   .mobile {
     display: none;
  }
-
 .desktop {
   display: flex;
   justify-content: space-between;
@@ -128,36 +142,27 @@ nav a:hover {
   height: 4rem;
   width: 100%;
   top: 0;
-  position: fixed;
-
-
     margin-right: 1.5rem;
-
  }
-
  .logo {
    display: flex;
      align-items: center;
     flex: 1;
     width: auto;
  }
-
 .logo a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
     margin-left: 1.5rem;
-
    }
-
 .logo span {
       text-transform: uppercase;
       opacity: 0.66;
    }
-
 #colmar {
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 #colmar:hover {
     color: #5abf17;
@@ -165,67 +170,152 @@ nav a:hover {
 }
 #academy {
     color: #808080;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
-
 nav li {
     list-style: none;
     margin-right: 1.5rem;
 }
-
 nav ul {
   display: flex;
-
     padding-left: 0;
     width: 100%;
 }
-
-
+}
 
 /* Learn Section */
 
-.banner {
+ .banner {
   width: 100%;
-    height: 180px;
-    background-size: cover;
-    background: url(../img/images/banner.jpg);
+  height: 180px;
+  background-size: cover;
+  background: url("../img/images/banner.jpg");
+  background-position: center;
 }
+
 .banner img {
     display: none;
 }
 
 .start-here {
-    padding: 32px 16px;
+    padding: 2rem 1rem;
+    align-content: center;
 }
 
-
-
-
- @media only screen and (min-width: 580px) {
-  .learn {
-    display: flex;
-    justify-content: flex-start;
+@media only screen and (min-width: 580px) {
+ .learn {
+   display: flex;
+    flex-direction: row;
     align-items: center;
-    position: relative;
-    width: 100%;
-    max-height: auto;
-    background-color: #c0c0c0;
-
-  }
-.learn .banner {
-    background: none;
-
-       height: auto;
-       width: 60%;
-
-      padding: 2rem 1.5rem;
-  }
-  .banner img {
-      display: flex;
-    }
+   background-color: #c0c0c0;
+ }
+.banner {
+   background: none;
+      height: auto;
+      width: 60%;
+     padding: 2rem 1.5rem;
+ }
+.banner img {
+     display: flex;
+   }
 
 .start-here {
-    width: 40%;
+   width: 40%;
+ }
+ }
 
+/* Information Section */
+.information {
+    padding: 16px 16px 32px;
+}
+
+.info-thumb {
+  overflow: hidden;
+}
+
+blockquote {
+    quotes: none;
+}
+
+footer {
+    padding: 16px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.practice {
+    display: none;
+}
+
+#orientation-image {
+background-size: cover;
+background: url("../ressources/img/images/information-orientation-mobile.jpg");
+}
+#campus-image {
+background-size: cover;
+background: url("../ressources/img/images/information-campus-mobile.jpg");
+}
+#guests-image {
+background-size: cover;
+background: url("../ressources/img/images/information-guest-lecture-mobile.jpg");
+}
+
+.information-text {
+    padding: 0.5rem 1rem;
+}
+
+@media only screen and (min-width: 580px) {
+.information {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+.practice {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 2rem 1.5rem;
   }
+  .practice img {
+      min-height: 350px;
+  }
+  .practice h2 {
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+  }
+.info-thumb {
+      height: auto;
+  }
+.info-thumb footer {
+      padding: 1rem 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+blockquote footer   {
+    margin-top: 2rem;
+}
+.information-details {
+    border-left: 1px solid grey;
+    padding-bottom: 2rem;
+  }
+
+    .information-details div:first-child {
+    margin-top: 2rem;
+}
+
+.orientation .campus .guests {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding: 1rem;
+    max-width: 40%;
+}
+.orientation img, .campus img, .guests img {
+    width: 35%;
+}
+}
+}

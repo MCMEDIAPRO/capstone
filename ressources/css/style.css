@@ -29,31 +29,27 @@ img {
     height: auto;
 }
 
-
-
 p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-
+  font-size: 0.6rem;
+  margin-bottom: 0.8rem;
 }
 
 h1 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 2rem;
 }
 
 h2 {
   font-size: 1.75rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
-font-size: 1.3rem;
-font-weight: bold;
-margin-bottom: 1rem;
-
+font-size: 0.7rem;
+font-weight: 600;
+margin-bottom: 0.7rem;
 }
 
 h4 {
@@ -70,15 +66,20 @@ button {
   display: block;
   padding: 0.5rem 0;
   color: #ffffff;
-   background-color: #3e5231;
-   width: 100%;
-   text-align: center;
-   margin-top: auto;
+  background-color: #3e5231;
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
 }
 
 button:hover {
     color: #5abf17;
     transition: color 200ms;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 0.8rem;
 }
 
 /* Header Container */
@@ -136,7 +137,7 @@ nav a:hover {
   height: 4rem;
   width: 100%;
   top: 0;
-    margin-right: 1.5rem;
+  margin-right: 1.5rem;
  }
  .logo {
    display: flex;
@@ -227,7 +228,9 @@ nav ul {
 }
 
 .information-text {
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 0.5rem;
+    display: flex;
+    width: 100%;
 }
 
 .practice {
@@ -252,12 +255,23 @@ nav ul {
     margin: 0 auto;
 }
 
+#readmore:hover {
+    color: #5abf17;
+    transition: color 200ms;
+
+}
 
 @media only screen and (min-width: 580px) {
 .information {
   display: flex;
   flex-direction: row;
   padding: 0;
+}
+.information-text {
+  display: flex;
+  flex-direction: column;
+      height: auto;
+      padding: 0.5rem 0;
 }
 .practice {
    display: flex;
@@ -272,22 +286,21 @@ nav ul {
     display: flex;
     flex-direction: column;
     width: 40%;
+    padding: 0;
     }
-  .details-cube div:first-child {
+.details-cube div:first-child {
         margin-top: 1rem;
     }
-
-  .info-thumb img {
+.info-thumb img {
       height: auto;
   }
-  footer {
-      padding: 16px 0;
+footer {
+      padding: 1rem 0;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      margin-top: 32px;
   }
-  .details-cube .img-mobile {
+.details-cube .img-mobile {
     display: none;
   }
 .details-cube .img-desktop {
@@ -295,22 +308,16 @@ nav ul {
   width: 35%;
     margin: 0;
     float: left;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 .orientation, .campus, .guests {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 1rem;
     border-bottom: 1px solid grey;
-
 }
-
-.information-text {
-  display: flex;
-  flex-direction: column;
-      height: auto;
-width: 65%;
+.guests {
+  background-color: #c0c0c0;
 }
 
 }

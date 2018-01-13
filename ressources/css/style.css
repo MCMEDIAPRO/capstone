@@ -12,10 +12,9 @@ header {
 
 header div nav main section {
     display: block;
-    height: 2rem;
 }
 
-img {
+img, video {
     width: 100%;
     height: auto;
 }
@@ -25,7 +24,7 @@ a {
 }
 
 p {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   padding-bottom: 0.5rem;
 }
 
@@ -41,7 +40,7 @@ h2 {
 }
 
 h3 {
-font-size: 0.6rem;
+font-size: 0.7rem;
 font-weight: 600;
 margin-bottom: 0.7rem;
 }
@@ -97,7 +96,7 @@ nav a:hover {
     transition: color 200ms;
 }
 
-
+/* Header Container Mobile */
 @media only screen and (min-width: 580px){
   .mobile {
     display: none;
@@ -190,7 +189,7 @@ blockquote {
   font-style: italic;
   font-size: 0.8rem;
 }
-
+/* Learn Section Mobile */
 @media only screen and (min-width: 580px) {
  .learn {
    display: flex;
@@ -216,7 +215,7 @@ blockquote {
  }
  }
 /* End of Learn Section */
-/* Information Section */
+/* Practice Container */
 
 .information-text {
     padding: 0.7rem 0.5rem;
@@ -227,7 +226,7 @@ blockquote {
 }
 
 .details-cube {
-  padding:  0 1rem;
+  padding:  1rem 1rem 0 1rem;
   flex-direction: column;
 }
 
@@ -252,7 +251,7 @@ blockquote {
     transition: color 200ms;
 }
 
-/* Information Section Mobile */
+/* Practice Container Mobile */
 
 @media only screen and (min-width: 580px) {
 .information {
@@ -315,16 +314,115 @@ footer {
   background-color: #c0c0c0;
 }
 }
-/* End of Information Section */
+
+/* Information Practice Container Mobile */
+
+.information-text {
+    padding: 0.7rem 0.5rem;
+}
+
+.practice {
+    display: none;
+}
+
+.details-cube {
+  padding:  0 1rem;
+  flex-direction: column;
+}
+
+.details-cube .img-desktop {
+  display: none;
+}
+
+.details-cube .img-mobile {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#readmore {
+ color: #3e5231;
+ font-weight: 600;
+}
+
+#readmore:hover {
+    color: #5abf17;
+    transition: color 200ms;
+}
+
+@media only screen and (min-width: 580px) {
+.information {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+.information-text {
+  display: flex;
+  flex-direction: column;
+      height: auto;
+      padding: 0;
+}
+.information-text h2 {
+  padding: 2rem 0rem 1.5rem 0rem;
+}
+.practice {
+   display: flex;
+   flex-direction: column;
+   width: 60%;
+   padding: 0rem 1.5rem;
+  }
+.details-cube {
+    border-left: 1px solid #808080;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 0;
+    }
+.details-cube div:first-child {
+        margin-top: 1rem;
+    }
+.info-thumb img {
+      height: auto;
+  }
+footer {
+      padding: 2rem 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+.details-cube .img-mobile {
+    display: none;
+  }
+.details-cube .img-desktop {
+    display: flex;
+  width: 35%;
+    margin: 0;
+    float: left;
+    padding: 0.5rem;
+}
+.orientation, .campus, .guests {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid c0c0c0;
+}
+.guests {
+  background-color: #c0c0c0;
+}
+}
+/* End of Details-Cube Container */
+
 /* Courses Section */
 
 .feature {
-    padding: 1.0rem 1rem;
+    padding: 1rem 2rem;
 }
 .feature h2 {
     text-align: center;
     width: 100%;
-    padding-bottom: 1rem;
+    padding: 1rem;
 }
 .feature img, .feature .description p {
     display: none;
@@ -346,14 +444,14 @@ footer {
 }
  .cards {
   width: 27%;
-margin: 0 2rem 1.5rem 0;
+  margin: 0 0.5rem 1.5rem 0;
 }
 .feature img {
     height: auto;
   }
 
 .description {
-  padding: 1rem 0 1.5rem 1rem;
+  padding: 1rem 0 0.5rem 1rem;
   background: white;
 }
 .feature h3 {
@@ -368,4 +466,70 @@ margin: 0 2rem 1.5rem 0;
     display: flex;
 }
 }
-/* Information Section */
+/* Enf of Courses */
+/* Exhibit Section */
+
+.exhibit h2 {
+  text-align: center;
+  width: 100%;
+}
+.visual h2, .visual h3 {
+    display: none;
+}
+.exhibit p {
+    padding: 0.5rem;
+    background: #c0c0c0;
+    margin-bottom: 0.5rem;
+}
+
+/* Exhibit Section Mobile */
+@media only screen and (min-width: 580px) {
+.visual {
+  display: flex;
+ flex-direction: row;
+ padding-left: 24px;
+ margin-bottom: 32px;
+}
+.demo {
+  margin-right: 24px;
+    width: 60%;
+}
+
+.visual video {
+  margin-right: 24px;
+
+  }
+
+.recent {
+display: block;
+}
+
+.recent:first-child {
+    background: lightgrey;
+}
+
+.visual h3, .visual p {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px
+}
+.extra {
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 16px;
+max-width: 423px;
+height: 168px;
+}
+
+.now {
+    display: block;
+}
+
+.now   img {
+  width: 35%;
+    margin-right: 16px;
+}
+
+/* Enf of Exhibit Section */

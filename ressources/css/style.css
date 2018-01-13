@@ -1,27 +1,18 @@
 /* Universal Styles */
 
 body {
-  font-size: 16px;
+  font-size: 1rem;
   background-color: #F4F4F4;
-  margin: 0px;
+  margin: 0;
 }
 
 header {
-  display: block;
   background-color: #ffffff;
 }
 
-nav {
-    display: flex;
-    height: 2rem;
-}
-
-main {
-  display: block;
-}
-
-div {
+header div nav main section {
     display: block;
+    height: 2rem;
 }
 
 img {
@@ -50,41 +41,21 @@ h2 {
 }
 
 h3 {
-font-size: 0.7rem;
+font-size: 0.6rem;
 font-weight: 600;
 margin-bottom: 0.7rem;
 }
 
 h4 {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 2rem;
 }
 
 ul {
     list-style: none;
 }
-
-button {
-  display: block;
-  padding: 0.5rem 0;
-  color: #ffffff;
-  background-color: #3e5231;
-  width: 100%;
-  text-align: center;
-  margin-top: auto;
-}
-
-button:hover {
-    color: #5abf17;
-    transition: color 200ms;
-}
-
-blockquote {
-  font-style: italic;
-  font-size: 0.8rem;
-}
-
+/* End of Universal Styles */
 /* Header Container */
 
 .desktop {
@@ -92,12 +63,12 @@ blockquote {
 }
 
  .mobile {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #ffffff;
-width: 100%;
-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+ width: 100%;
+ top: 0;
 }
 
 .navigation {
@@ -181,7 +152,7 @@ nav ul {
     width: 100%;
 }
 }
-
+/* End of Header Container */
 /* Learn Section */
 
  .banner {
@@ -199,6 +170,25 @@ nav ul {
     padding: 2rem 1rem;
     align-content: center;
       background-color: #c0c0c0;
+}
+button {
+  display: block;
+  padding: 0.5rem 0;
+  color: #ffffff;
+  background-color: #3e5231;
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+}
+
+button:hover {
+    color: #5abf17;
+    transition: color 200ms;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 0.8rem;
 }
 
 @media only screen and (min-width: 580px) {
@@ -225,18 +215,11 @@ nav ul {
   font-size: 1.7rem;
  }
  }
-
+/* End of Learn Section */
 /* Information Section */
-
-.information {
-    padding: 1rem 0rem;
-    margin: 1rem 0rem;
-
-}
 
 .information-text {
     padding: 0.7rem 0.5rem;
-
 }
 
 .practice {
@@ -258,15 +241,18 @@ nav ul {
     overflow: hidden;
     margin: 0 auto;
 }
+
 #readmore {
-color: #3e5231;
-font-weight: 600;
+ color: #3e5231;
+ font-weight: 600;
 }
 
 #readmore:hover {
     color: #5abf17;
     transition: color 200ms;
 }
+
+/* Information Section Mobile */
 
 @media only screen and (min-width: 580px) {
 .information {
@@ -278,19 +264,17 @@ font-weight: 600;
   display: flex;
   flex-direction: column;
       height: auto;
-      padding: 0.5rem 0;
+      padding: 0;
 }
 .information-text h2 {
   padding: 2rem 0rem 1.5rem 0rem;
 }
-
 .practice {
    display: flex;
    flex-direction: column;
    width: 60%;
-   padding: 2rem 1.5rem;
+   padding: 0rem 1.5rem;
   }
-
 .details-cube {
     border-left: 1px solid #808080;
     padding: 1rem;
@@ -325,10 +309,63 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid c0c0c0;
 }
 .guests {
   background-color: #c0c0c0;
 }
-
 }
+/* End of Information Section */
+/* Courses Section */
+
+.feature {
+    padding: 1.0rem 1rem;
+}
+.feature h2 {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.feature img, .feature .description p {
+    display: none;
+}
+.feature h3 {
+    padding: 0.5rem;
+    background: #c0c0c0;
+    margin-bottom: 0.5rem;
+}
+
+/* Courses Section Mobile */
+@media only screen and (min-width: 580px) {
+  .feature {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+    background: #c0c0c0;
+  padding: 0;
+}
+ .cards {
+  width: 27%;
+margin: 0 2rem 1.5rem 0;
+}
+.feature img {
+    height: auto;
+  }
+
+.description {
+  padding: 1rem 0 1.5rem 1rem;
+  background: white;
+}
+.feature h3 {
+  background: white;
+  padding: 0;
+}
+.feature p {
+    padding: 0rem 0 0.5rem 0;
+}
+
+.feature img, .feature .description p {
+    display: flex;
+}
+}
+/* Information Section */

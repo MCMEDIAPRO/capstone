@@ -46,9 +46,8 @@ margin-bottom: 0.7rem;
 }
 
 h4 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
+  font-size: 0.6rem;
+  margin-bottom: 1.5rem;
 }
 
 ul {
@@ -467,69 +466,65 @@ footer {
 }
 }
 /* Enf of Courses */
+
 /* Exhibit Section */
 
 .exhibit h2 {
-  text-align: center;
-  width: 100%;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    width: 100%;
 }
-.visual h2, .visual h3 {
+
+.recent, .visual p, .visual h3 {
     display: none;
-}
-.exhibit p {
-    padding: 0.5rem;
-    background: #c0c0c0;
-    margin-bottom: 0.5rem;
 }
 
 /* Exhibit Section Mobile */
 @media only screen and (min-width: 580px) {
 .visual {
   display: flex;
- flex-direction: row;
- padding-left: 24px;
- margin-bottom: 32px;
+  flex-direction: row;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .demo {
-  margin-right: 24px;
+    margin-right: 1.5rem;
     width: 60%;
 }
-
-.visual video {
-  margin-right: 24px;
-
-  }
-
-.recent {
-display: block;
+.demo p, .demo h3 {
+  display: flex;
+flex-direction: column;
+padding-top: 1.5rem;
 }
 
-.recent:first-child {
+.recent  {
+  display: block;
+  width: 40%;
+  flex-direction: column;
+}
+
+.extra img {
+  width: 35%;
+    margin-right: 1rem;
+}
+
+.extra:first-child {
     background: lightgrey;
 }
 
-.visual h3, .visual p {
-    display: flex;
-    flex-direction: column;
-    padding-top: 24px
-}
 .extra {
-
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
 max-width: 423px;
 height: 168px;
 }
-
-.now {
+.extra-details h4, .extra p {
     display: block;
+    flex-direction: column;
 }
 
-.now   img {
-  width: 35%;
-    margin-right: 16px;
 }
 
 /* Enf of Exhibit Section */

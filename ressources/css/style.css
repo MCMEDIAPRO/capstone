@@ -11,7 +11,7 @@ header {
   background-color: #ffffff;
 }
 
-header div nav main section {
+div nav main section {
     display: block;
 }
 
@@ -21,11 +21,11 @@ img, video {
 }
 
 a {
-  font-size: 0.9rem;
+  font-size: 0.6rem;
 }
 
 p {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   padding-bottom: 0.5rem;
 }
 
@@ -41,25 +41,28 @@ h2 {
 }
 
 h3 {
-font-size: 1rem;
+font-size: 0.7rem;
 font-weight: 600;
-margin-bottom: 0.7rem;
+
 }
 
 h4 {
-  font-size: 0.8rem;
-  margin-bottom: 1.5rem;
+  font-size: 0.6rem;
 }
 
 ul li {
     list-style: none;
 }
 
+span {
+  font-size: 0.7rem;
+}
+
 footer {
-      padding: 1rem 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
 /* End of Universal Styles */
@@ -74,8 +77,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
- width: 100%;
- top: 0;
+  width: 100%;
+  top: 0;
 }
 
 .navigation {
@@ -277,6 +280,9 @@ blockquote {
 .information-text h2 {
   padding: 2rem 0rem 1.5rem 0rem;
 }
+.information-text h3 {
+  padding-bottom: 0.5rem;
+}
 .practice {
    display: flex;
    flex-direction: column;
@@ -429,7 +435,7 @@ blockquote {
 .feature h3 {
     padding: 0.5rem;
     background: #c0c0c0;
-    margin-bottom: 0.5rem;
+
 }
 
 /* Courses Section Mobile */
@@ -445,9 +451,7 @@ blockquote {
   width: 27%;
   margin: 0 0.5rem 1.5rem 0;
 }
-.feature img {
-    height: auto;
-  }
+
 
 .description {
   padding: 1rem 0 0.5rem 1rem;
@@ -455,7 +459,7 @@ blockquote {
 }
 .feature h3 {
   background: white;
-  padding: 0;
+  padding: 0  0 0.5rem 0;
 }
 .feature p {
     padding: 0rem 0 0.5rem 0;
@@ -466,12 +470,13 @@ blockquote {
 }
 }
 /* Enf of Courses */
-
 /* Exhibit Section */
-
 .exhibit h2 {
-    padding: 2rem 0 1rem 0;
-    text-align: center;
+  text-align: center;
+}
+.exhibit h4 {
+    padding: 0.5rem 0 1rem 0;
+    text-align: left;
     width: 100%;
 }
 
@@ -540,7 +545,7 @@ align-content: center;
 .copyright {
   margin-left: 1.5rem;
 }
-nav {
+.terms {
     display: none;
 }
 

@@ -38,12 +38,13 @@ h1 {
 h2 {
   font-size: 1.5rem;
   font-weight: bold;
+  padding: 1rem;
 }
 
 h3 {
 font-size: 0.7rem;
 font-weight: 600;
-
+padding-bottom: 0.5rem;
 }
 
 h4 {
@@ -179,7 +180,7 @@ nav ul {
 .start-here {
     padding: 2rem 1rem;
     align-content: center;
-      background-color: #c0c0c0;
+
 }
 button {
   display: block;
@@ -199,6 +200,12 @@ button:hover {
 blockquote {
   font-style: italic;
   font-size: 0.8rem;
+padding-bottom: 2rem;
+}
+.learn h1 {
+  padding-bottom: 0.5rem;
+}
+.learn h4 {
   padding-bottom: 1.5rem;
 }
 /* Learn Section Mobile */
@@ -207,7 +214,7 @@ blockquote {
    display: flex;
     flex-direction: row;
     align-items: center;
-   background-color: #c0c0c0;
+  background-color: #c0c0c0;
  }
 .banner {
    background: none;
@@ -238,7 +245,7 @@ blockquote {
 }
 
 .details-cube {
-  padding:  1rem 1rem 0 1rem;
+  padding:  1rem 0.5rem 0rem 0.5rem;
   flex-direction: column;
 }
 
@@ -269,7 +276,7 @@ blockquote {
 .information {
   display: flex;
   flex-direction: row;
-  padding: 0;
+  padding-bottom: 1rem;
 }
 .information-text {
   display: flex;
@@ -278,7 +285,7 @@ blockquote {
       padding: 0;
 }
 .information-text h2 {
-  padding: 2rem 0rem 1.5rem 0rem;
+  padding: 1rem 0rem 1.5rem 0rem;
 }
 .information-text h3 {
   padding-bottom: 0.5rem;
@@ -314,7 +321,7 @@ blockquote {
     float: left;
     padding: 0.5rem;
 }
-.orientation, .campus, .guests {
+.orientation .campus .guests {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -326,7 +333,9 @@ blockquote {
 }
 
 /* Information Practice Container Mobile */
-
+.information {
+  padding: 0.5rem;
+}
 .information-text {
     padding: 0.7rem 0.5rem;
 }
@@ -336,7 +345,7 @@ blockquote {
 }
 
 .details-cube {
-  padding:  0 1rem;
+
   flex-direction: column;
 }
 
@@ -365,7 +374,7 @@ blockquote {
 .information {
   display: flex;
   flex-direction: row;
-  padding: 0;
+
 }
 .information-text {
   display: flex;
@@ -373,15 +382,14 @@ blockquote {
       height: auto;
       padding: 0;
 }
-.information-text h2 {
-  padding: 2rem 0rem 1.5rem 0rem;
-}
+
 .practice {
    display: flex;
    flex-direction: column;
    width: 60%;
    padding: 0rem 1.5rem;
   }
+
 .details-cube {
     border-left: 1px solid #808080;
     padding: 1rem;
@@ -411,23 +419,23 @@ blockquote {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-bottom: 1px solid c0c0c0;
+    border-bottom: 1px solid grey;
 }
 .guests {
   background-color: #c0c0c0;
 }
 }
-/* End of Details-Cube Container */
+/* End of Practice Container */
 
 /* Courses Section */
-
-.feature {
-    padding: 1rem 2rem;
+.cards {
+  margin: 0 0 0.5rem 0;
 }
+
 .feature h2 {
     text-align: center;
     width: 100%;
-    padding: 1rem;
+  padding: 1rem;
 }
 .feature img, .feature .description p {
     display: none;
@@ -437,6 +445,11 @@ blockquote {
     background: #c0c0c0;
 
 }
+.feature p {
+    padding: 0rem 0 0.5rem 0;
+    font-size: 0.5rem;
+}
+
 
 /* Courses Section Mobile */
 @media only screen and (min-width: 580px) {
@@ -445,8 +458,9 @@ blockquote {
   flex-wrap: wrap;
   justify-content: center;
     background: #c0c0c0;
-  padding: 0;
+
 }
+
  .cards {
   width: 27%;
   margin: 0 0.5rem 1.5rem 0;
@@ -460,9 +474,6 @@ blockquote {
 .feature h3 {
   background: white;
   padding: 0  0 0.5rem 0;
-}
-.feature p {
-    padding: 0rem 0 0.5rem 0;
 }
 
 .feature img, .feature .description p {

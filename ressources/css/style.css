@@ -1,8 +1,7 @@
 /* Universal Styles */
-
 body {
   font-size: 1rem;
-   font-family: "Roboto";
+  font-family: "Roboto";
   background-color: #F4F4F4;
   margin: 0;
 }
@@ -21,100 +20,79 @@ body {
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
 }
-header {
-  background-color: #ffffff;
-}
 
-div nav main section {
-    display: block;
+div main section {
+   display: block;
 }
 
 img, video {
-    width: 100%;
-    height: auto;
+   width: 100%;
+   height: auto;
 }
 
 a {
-  font-size: 0.6rem;
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 p {
-  font-size: 0.6rem;
+  font-size: 1.1rem;
   padding-bottom: 0.5rem;
 }
 
 h1 {
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 2.3rem;
+  font-weight: 700;
   margin-bottom: 2rem;
 }
 
 h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 600;
   padding: 1rem;
+  color: #3d5030;
 }
 
 h3 {
-font-size: 0.7rem;
+font-size: 1.4rem;
 font-weight: 600;
 padding-bottom: 0.5rem;
+font-stretch: ultra-expanded;
+  color: #3d5030;
 }
 
 h4 {
-  font-size: 0.6rem;
+  font-size: 1.8rem;
+  color: #3d5030;
 }
 
-ul li {
-    list-style: none;
+h5 {
+  font-size: 1.1rem;
 }
 
 span {
-  font-size: 0.7rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+   padding-top: 1rem;
 }
-
-footer {
-    padding: 1rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
 
 /* End of Universal Styles */
-/* Header Container */
-
-.desktop {
-  display: none;
-}
-
- .mobile {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Header Container-Navigation---Mobile */
+header {
   background-color: #ffffff;
-  width: 100%;
-  top: 0;
 }
 
-.navigation {
-  align-items: : center;
-}
-
-.navigation li {
-  display: flex;
-  list-style: none;
-}
-.navigation img {
-  padding: 0.4rem;
+nav {
+    display: flex;
+    height: 4rem;
 }
 
 nav a {
     text-decoration: none;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     color: #3d5030;
-    font-weight: 500;
 }
 
 nav a:hover {
@@ -122,11 +100,40 @@ nav a:hover {
     transition: color 200ms;
 }
 
-/* Header Container Mobile */
+.desktop {
+   display: none;
+}
+
+.mobile {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.navigation {
+  align-items: center;
+}
+
+li ul {
+    list-style: none;
+}
+
+.navigation li {
+  display: flex;
+  list-style: none;
+}
+
+.navigation img {
+  padding: 0.4rem;
+}
+
+/* Header Container---Screen */
 @media only screen and (min-width: 580px){
   .mobile {
     display: none;
  }
+
 .desktop {
   display: flex;
   justify-content: space-between;
@@ -135,52 +142,59 @@ nav a:hover {
   height: 2rem;
   width: 100%;
   top: 0;
-  margin-right: 1.5rem;
+  margin: 1rem 1.5rem 1rem 0;
  }
- .logo {
+
+.logo {
    display: flex;
-     align-items: center;
-    flex: 1;
-    width: auto;
+   align-items: center;
+   flex: 1;
+  width: auto;
  }
+
 .logo a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-    margin-left: 1.5rem;
+  margin-left: 1.5rem;
    }
+
 .logo span {
-      text-transform: uppercase;
-      opacity: 0.66;
+  text-transform: uppercase;
+  opacity: 0.73;
    }
 
 #colmar {
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: 800;
+    font-size: 2rem;
 }
 #colmar:hover {
     color: #5abf17;
     transition: color 200ms;
 }
+
 #academy {
     color: #808080;
-    font-size: 1.1rem;
+    font-size: 1.9rem;
     font-weight: 600;
 }
+
 nav li {
+  display: flex;
     list-style: none;
-    margin-right: 1.5rem;
+    margin-right: 1.6rem;
 }
+
 nav ul {
   display: flex;
     padding-left: 0;
     width: 100%;
 }
 }
-/* End of Header Container */
-/* Learn Section */
+/* End of Header Container-Navigation---Screen */
+/* Learn Section---Mobile */
 
- .banner {
+.banner {
   width: 100%;
   height: 180px;
   background: url("../img/images/banner.jpg");
@@ -192,10 +206,11 @@ nav ul {
 }
 
 .start-here {
-    padding: 2rem 1rem;
+    padding: 1rem;
     align-content: center;
 
 }
+
 button {
   display: block;
   padding: 0.5rem 0;
@@ -203,7 +218,7 @@ button {
   background-color: #3e5231;
   width: 100%;
   text-align: center;
-  margin-top: auto;
+  margin-top: 1rem;
 }
 
 button:hover {
@@ -213,42 +228,46 @@ button:hover {
 
 blockquote {
   font-style: italic;
-  font-size: 0.8rem;
-padding-bottom: 2rem;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  text-align: justify;
 }
+
 .learn h1 {
   padding-bottom: 0.5rem;
 }
 .learn h4 {
   padding-bottom: 1.5rem;
 }
-/* Learn Section Mobile */
+/* Learn Section---Screen */
 @media only screen and (min-width: 580px) {
- .learn {
+.learn {
    display: flex;
     flex-direction: row;
     align-items: center;
-  background-color: #c0c0c0;
+   background-color: #c0c0c0;
  }
 .banner {
    background: none;
-      height: auto;
-      width: 60%;
-     padding: 2rem 0rem 2rem 2rem;
+    height: auto;
+    width: 60%;
+   padding: 2rem 0rem 2rem 2rem;
  }
+
 .banner img {
      display: flex;
    }
 
 .start-here {
    width: 40%;
+   padding-top: 1.5rem;
  }
  .start-here h1 {
   font-size: 1.7rem;
  }
  }
-/* End of Learn Section */
-/* Practice Container */
+/* End of Learn Section---Screen */
+/* Practice Container---Mobile */
 
 .information-text {
     padding: 0.7rem 0.5rem;
@@ -276,7 +295,6 @@ padding-bottom: 2rem;
 
 #readmore {
  color: #3e5231;
- font-weight: 600;
 }
 
 #readmore:hover {
@@ -284,7 +302,7 @@ padding-bottom: 2rem;
     transition: color 200ms;
 }
 
-/* Practice Container Mobile */
+/* Practice Container---Screen */
 
 @media only screen and (min-width: 580px) {
 .information {
@@ -302,14 +320,15 @@ padding-bottom: 2rem;
   padding: 1rem 0rem 1.5rem 0rem;
 }
 .information-text h3 {
-  padding-bottom: 0.5rem;
+  padding-bottom: 2rem;
 }
 .practice {
    display: flex;
    flex-direction: column;
    width: 60%;
-   padding: 0rem 1.5rem;
+   padding: 1rem 1.5rem;
   }
+
 .details-cube {
     border-left: 1px solid #808080;
     padding: 1rem;
@@ -318,8 +337,90 @@ padding-bottom: 2rem;
     width: 40%;
     padding: 0;
     }
+
 .details-cube div:first-child {
         margin-top: 1rem;
+    }
+.info-thumb img {
+      height: auto;
+  }
+
+.details-cube .img-mobile {
+    display: none;
+  }
+
+.details-cube .img-desktop {
+    display: flex;
+  width: 35%;
+    margin: 0;
+    float: left;
+    padding: 0.5rem;
+}
+
+.orientation .campus .guests {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid c0c0c0;
+}
+.guests {
+  background-color: #c0c0c0;
+}
+}
+/* End of Practice Container Screen */
+/* Information Practice Container---Mobile */
+
+.practice {
+    display: none;
+}
+.details-cube {
+  flex-direction: column;
+}
+
+.details-cube .img-desktop {
+  display: none;
+}
+
+.details-cube .img-mobile {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+/* Information Practice Container---Screen */
+@media only screen and (min-width: 580px) {
+
+  .practice {
+     display: flex;
+     flex-direction: column;
+     width: 60%;
+     padding: 1rem 1.5rem;
+    }
+
+.information {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+  }
+
+.information-text {
+   display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 0.7rem 0.7rem;
+  }
+
+.details-cube {
+    border-left: 1px solid #808080;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 0;
+    }
+
+.details-cube div:first-child {
+        margin-top: 0.5rem;
     }
 .info-thumb img {
       height: auto;
@@ -339,109 +440,15 @@ padding-bottom: 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-bottom: 1px solid c0c0c0;
-}
-.guests {
-  background-color: #c0c0c0;
-}
-}
-
-/* Information Practice Container Mobile */
-.information {
-  padding: 0.5rem;
-}
-.information-text {
-    padding: 0.7rem 0.5rem;
-}
-
-.practice {
-    display: none;
-}
-
-.details-cube {
-
-  flex-direction: column;
-}
-
-.details-cube .img-desktop {
-  display: none;
-}
-
-.details-cube .img-mobile {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-#readmore {
- color: #3e5231;
- font-weight: 600;
-}
-
-#readmore:hover {
-    color: #5abf17;
-    transition: color 200ms;
-}
-
-@media only screen and (min-width: 580px) {
-.information {
-  display: flex;
-  flex-direction: row;
-
-}
-.information-text {
-  display: flex;
-  flex-direction: column;
-      height: auto;
-      padding: 0;
-}
-
-.practice {
-   display: flex;
-   flex-direction: column;
-   width: 60%;
-   padding: 0rem 1.5rem;
-  }
-
-.details-cube {
-    border-left: 1px solid #808080;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    padding: 0;
-    }
-.details-cube div:first-child {
-        margin-top: 1rem;
-    }
-.info-thumb img {
-      height: auto;
-  }
-
-.details-cube .img-mobile {
-    display: none;
-  }
-.details-cube .img-desktop {
-    display: flex;
-  width: 35%;
-    margin: 0;
-    float: left;
-    padding: 0.5rem;
-}
-.orientation, .campus, .guests {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     border-bottom: 1px solid grey;
 }
 .guests {
   background-color: #c0c0c0;
 }
 }
-/* End of Practice Container */
+/* End of Practice Container---Screen */
+/* Start-Learning--Courses Section---Mobile */
 
-/* Courses Section */
 .cards {
   margin: 0 0 0.5rem 0;
 }
@@ -449,7 +456,7 @@ padding-bottom: 2rem;
 .feature h2 {
     text-align: center;
     width: 100%;
-  padding: 1rem;
+   padding: 1rem;
 }
 .feature img, .feature .description p {
     display: none;
@@ -461,25 +468,22 @@ padding-bottom: 2rem;
 }
 .feature p {
     padding: 0rem 0 0.5rem 0;
-    font-size: 0.5rem;
+
 }
 
-
-/* Courses Section Mobile */
+/* Courses Section---Screen */
 @media only screen and (min-width: 580px) {
-  .feature {
+.feature {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
     background: #c0c0c0;
-
 }
 
  .cards {
   width: 27%;
   margin: 0 0.5rem 1.5rem 0;
 }
-
 
 .description {
   padding: 1rem 0 0.5rem 1rem;
@@ -496,9 +500,11 @@ padding-bottom: 2rem;
 }
 /* Enf of Courses */
 /* Exhibit Section */
+
 .exhibit h2 {
   text-align: center;
 }
+
 .exhibit h4 {
     padding: 0.5rem 0 1rem 0;
     text-align: left;
@@ -509,7 +515,7 @@ padding-bottom: 2rem;
     display: none;
 }
 
-/* Exhibit Section Mobile */
+/* Exhibit Section---Screen */
 @media only screen and (min-width: 580px) {
 .visual {
   display: flex;
@@ -517,15 +523,21 @@ padding-bottom: 2rem;
   padding-left: 1.5rem;
 
 }
+
 .demo {
     margin-right: 1.5rem;
     width: 60%;
 }
+
 .demo p, .demo h3 {
   display: flex;
-flex-direction: column;
-padding-top: 1.5rem;
+  flex-direction: column;
+  padding: 1.5rem 0 1.5rem 0;
 }
+.demo h3 {
+  color: black;
+}
+
 .demo p {
   padding-bottom:  2rem;
 }
@@ -554,39 +566,49 @@ padding-top: 1.5rem;
 .extra-details {
   width: 65%;
 }
+
 .extra-details h4, .extra p {
     display: block;
     flex-direction: column;
 }
 }
-/* Enf of Exhibit Section */
-/* Begin of Footer */
+/* Enf of Exhibit Section---Screen */
+/* Begin of Footer---Mobile */
 footer {
-  display: flex;
-    padding: 1rem 0;
-align-content: center;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     align-content: center;
+    border-top: 0.5px solid #c0c0c0;
+  }
 
+footer a {
+  font-size: 1.1rem;
+  color: black;
 }
+
 .copyright {
   margin-left: 1.5rem;
+  font-weight: 500;
 }
+
 .terms {
     display: none;
 }
 
 @media only screen and (min-width: 580px) {
-footer {
-    border-top: 1px solid #c0c0c0;
-   padding: 1rem 0;
-     justify-content: space-between;
-  }
+
+
 .terms {
  display: flex;
   }
+
 .terms ul li {
     display: flex-end;
     flex-direction: row;
 }
+
 .terms ul li:first-child {
     margin-right: 1rem;
   }

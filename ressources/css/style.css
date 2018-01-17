@@ -239,7 +239,7 @@ blockquote {
 .learn h4 {
   padding-bottom: 1.5rem;
 }
-/* Learn Section---Screen */
+/* Learn----Screen */
 @media only screen and (min-width: 580px) {
 .learn {
    display: flex;
@@ -267,7 +267,7 @@ blockquote {
  }
  }
 /* End of Learn Section---Screen */
-/* Practice Container---Mobile */
+/* Practice-Orientation-Campus-Guests---Mobile */
 
 .information-text {
     padding: 0.7rem 0.5rem;
@@ -292,6 +292,14 @@ blockquote {
     overflow: hidden;
     margin: 0 auto;
 }
+.information-text h3 {
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+.information-text p {
+  padding-bottom: 1rem;
+}
 
 #readmore {
  color: #3e5231;
@@ -314,14 +322,13 @@ blockquote {
   display: flex;
   flex-direction: column;
       height: auto;
-      padding: 0;
+        padding-top: 1rem;
+
 }
 .information-text h2 {
   padding: 1rem 0rem 1.5rem 0rem;
 }
-.information-text h3 {
-  padding-bottom: 2rem;
-}
+
 .practice {
    display: flex;
    flex-direction: column;
